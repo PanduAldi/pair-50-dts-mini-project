@@ -13,14 +13,14 @@ const urlImage = "https://image.tmdb.org/t/p/w500";
 const CardMovie = ({ data }) => {
   return (
     <>
-      <Col xs={12} md={3}>
-        <Card sx={{ maxWidth: "100%", mb: 1 }}>
+      <Col xs={6} md={3}>
+        <Card sx={{ maxWidth: "100%", mb: 2 }}>
           <CardActionArea>
             <CardMedia
               component="img"
               height="150"
               image={`${urlImage}${data.backdrop_path}`}
-              alt="green iguana"
+              alt={data.title}
             />
             <CardContent>
               <Typography gutterBottom variant="body1" component="div">

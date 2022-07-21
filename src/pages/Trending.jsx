@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Box, Typography, Skeleton } from "@mui/material";
-import axios from "axios";
+
+import TrendingMovie from "../containers/TrendingMovie";
 const Trending = () => {
   return (
     <>
@@ -8,6 +9,8 @@ const Trending = () => {
         <Typography variant="h5" sx={{ color: "#fff" }}>
           🔥Trending
         </Typography>
+
+        <TrendingMovie />
       </Box>
     </>
   );
